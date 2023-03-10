@@ -136,6 +136,7 @@ int main()
 		printf("\t1 - Registrar Nomes\n");// Opções "\t" serva para dar um espaçamento nas pagina
 		printf("\t2 - Consultar Nomes\n");
 		printf("\t3 - Deletar Nomes\n\n");
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("Esse Software é do WandersonCS\n");// identificação do "desenvolvedor"
 		printf("Opção: ");
 		
@@ -153,9 +154,14 @@ int main()
 			consultar();
 			break;
 			
-			case 3:
+			case 3:			
 			deletar();
 			break;	
+			
+			case 4:
+			printf("Obrigado por utilizar esse sistema\n");
+			return 0;
+			break;
 
 			default:// na opção "default" corresponde a tudo que não se aplica como caso.
 			printf("Esta opção não está disponivel\n");
